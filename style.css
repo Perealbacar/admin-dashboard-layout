@@ -59,7 +59,16 @@
 
 .content{
     display: grid;
-    background-color: var(--secondary-color);
-    padding: 20px;
+    grid-template-rows: 1fr 8fr;
+    background-color: var(--background-color);
+    
 }
+
+.header{
+    padding: 20px;
+    display: grid;
+    grid-template-rows:1fr 2fr;
+    background-color: var(--secondary-color);
+}
+
 
