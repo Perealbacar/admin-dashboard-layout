@@ -68,37 +68,41 @@
     padding: 20px;
     display: grid;
     grid-template-rows:1fr 4fr;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--secondary-color);
 }
 
 .top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: stretch;
+    align-self: center;
+    display:grid;
     gap: 20px;
 }
 
 
 
 .top > input{   
-    flex: 0 1 600px;
     background: var(--background-color);
     border: none;
     border-radius: 16px;
     align-self: stretch;
+    height: 1.5rem;
+    margin-right: 20px;
 }
 
 .icons{
-    flex: 0 0 250px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     display: flex;
     gap: 20px;
 }
 
 .actions{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    
 }
 
 .profile{
@@ -116,12 +120,22 @@
 
 .action-buttons > button{
     font-weight: 700;
-    padding: 10px 10px;
-    
+    padding: 10px 10px;    
     background-color: var(--main-color);
     color: var(--secondary-color);
     border-radius: 20px;
     border: none;
+}
+
+.article-area{
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+
+.right-bar{
+    
 }
 
 
