@@ -39,11 +39,20 @@
     filter:invert(100%);
 }
 
+.icons{
+    font-weight: bold;
+}
+
 .icons > img{
     object-fit: cover;
-    height:75px;
-    width: 75px;
+    height:55px;
+    width: 55px;
     border-radius: 50px;
+}
+
+.icons > button > img {
+    object-fit: cover;
+    height: 25px;
 }
 
 .menu{     
@@ -55,6 +64,21 @@
     justify-content: stretch;
     gap: 20px;
     
+}
+
+button{
+    font-size: 1rem;
+    background-color: white;
+    font-weight: bold;
+    height: 40px;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.15s;
+
 }
 
 .menu > button{
@@ -97,6 +121,8 @@
     display: grid;
     grid-template-rows:1fr 4fr;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    height: 170px;
     background-color: var(--secondary-color);
 }
 
@@ -105,8 +131,6 @@
     grid-template-columns: 25px 1fr;
     justify-items: stretch;
     align-items: center;
-    margin-top: 10px;
-    height: 1.5rem;    
     gap: 20px;
 }
 
@@ -135,7 +159,18 @@
 }
 
 .actions{
-    
+    font-weight: bold;
+}
+
+.nickname{
+    font-size: 1.5rem;
+}
+
+.profile > img{
+    object-fit: cover;
+    height:85px;
+    width: 85px;
+    border-radius: 50px;
 }
 
 .profile{
@@ -153,11 +188,15 @@
 
 .action-buttons > button{
     font-weight: 700;
-    padding: 10px 10px;    
+    padding: 10px;  
     background-color: var(--main-color);
     color: var(--secondary-color);
     border-radius: 20px;
     border: none;
+    width: 120px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 .article-area{
