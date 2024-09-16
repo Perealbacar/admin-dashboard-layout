@@ -101,20 +101,27 @@
 }
 
 .top{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-self: stretch;
-    align-self: center;
     display:grid;
+    grid-template-columns: 25px 1fr;
+    justify-items: stretch;
+    align-items: center;
+    margin-top: 10px;
+    height: 1.5rem;    
     gap: 20px;
+}
+
+.top > img{
+    object-fit:scale-down;
+    width: 25px;
 }
 
 .top > input{   
     background: var(--background-color);
     border: none;
     border-radius: 16px;
-    align-self: stretch;
+    align-self: center;
     height: 1.5rem;
+    padding: 12px;
     margin-right: 20px;
 }
 
