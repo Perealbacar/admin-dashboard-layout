@@ -75,11 +75,17 @@ button{
     justify-content: start;
     align-items: center;
     border: none;
-    border-radius: 20px;
+    border-radius: 50%;
     cursor: pointer;
     transition: 0.15s;
 
 }
+
+button:hover{
+    background-color: rgba(0,0,0, 0.1);
+
+}
+
 
 .menu > button{
     font-size: 1rem;
@@ -227,12 +233,28 @@ button{
     grid-column: 1 / 3;
 }
 
-.card{    
+.card{  
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 100%;
     background-color: white;
     border-radius: 12px;
     box-shadow: 2px 2px 3px rgba(0,0,0, 0.2);
     background-image: linear-gradient(to right,orange 2%, white 2%);
-    padding: 20px;
+    padding: 2.5rem;
+}
+
+h3{
+    margin-bottom: 8px;
+}
+
+
+
+.card > .icons {
+    align-items: end;
+    justify-content: end;;
+    grid-column: 1;
+    grid-row: 3/4;
 }
 
 .right-bar > .card{
